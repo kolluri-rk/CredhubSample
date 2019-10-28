@@ -1,0 +1,10 @@
+applications:
+- name: credhub-sample
+  instances: 1
+  memory: 512M
+  disk_quota: 512M
+  stack: cflinuxfs3
+  buildpacks: 
+  - dotnet_core_buildpack
+  services:
+    - test-credhub-service
